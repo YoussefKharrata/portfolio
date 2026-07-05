@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Youssef Kharrata — Security Engineer</title>
+<meta name="description" content="Cybersecurity portfolio — penetration testing, security engineering, and research projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta name="theme-color" content="#0A0D12">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Youssef Kharrata — Security Engineer">
+<meta property="og:description" content="Cybersecurity portfolio — penetration testing, security engineering, and research projects.">
+<meta name="twitter:card" content="summary">
+</head>
+<body>
+
+<div class="crt-overlay" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="index.html">
+      <span class="brand-bracket">[</span>YK<span class="brand-bracket">]</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html" class="is-active">home</a>
+      <a href="projects.html">projects</a>
+      <a href="skills.html">skills</a>
+      <a href="contact.html">contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="terminal" id="bootTerminal">
+      <div class="terminal-bar">
+        <span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span>
+        <span class="terminal-title">session — /dev/tty01</span>
+      </div>
+      <div class="terminal-body" id="terminalBody" aria-live="polite"></div>
+    </div>
+
+    <div class="hero-profile" id="heroProfile">
+      <p class="eyebrow">// cybersecurity engineer</p>
+      <h1 class="hero-name">Youssef Kharrata</h1>
+      <p class="hero-tagline">Finding the gaps before someone else does. Offensive security, threat research, and building systems that hold up under pressure.</p>
+      <div class="hero-actions">
+        <a href="projects.html" class="btn btn-primary">View case files</a>
+        <a href="contact.html" class="btn btn-ghost">Get in touch</a>
+      </div>
+      <div class="hero-meta">
+        <span><span class="meta-label">based in</span> Casablanca, MA</span>
+        <span class="meta-sep">/</span>
+        <span><span class="meta-label">available</span> remote &amp; onsite</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span>© <span id="year"></span> Youssef Kharrata</span>
+    <span class="footer-sep">·</span>
+    <span>built with intent, not a template</span>
+  </div>
+</footer>
+
+<script src="shared.js"></script>
+<script src="shell.js"></script>
+</body>
+</html>

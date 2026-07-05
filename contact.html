@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Youssef Kharrata</title>
+<meta name="description" content="Get in touch — email, GitHub, LinkedIn.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta name="theme-color" content="#0A0D12">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact — Jordan Reyes">
+<meta property="og:description" content="Get in touch — email, GitHub, LinkedIn.">
+<meta name="twitter:card" content="summary">
+</head>
+<body>
+
+<div class="crt-overlay" aria-hidden="true"></div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="index.html">
+      <span class="brand-bracket">[</span>YK<span class="brand-bracket">]</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">home</a>
+      <a href="projects.html">projects</a>
+      <a href="skills.html">skills</a>
+      <a href="contact.html" class="is-active">contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="page-header">
+  <p class="page-path">youssef@sec<span class="path-sep">:~/contact$</span> <span class="path-cmd">cat contact.json</span></p>
+</div>
+
+<section class="section">
+  <div class="section-inner contact-inner">
+    <div class="section-head">
+      <p class="section-kicker">03 / open channel</p>
+      <h2 class="section-title">Let's talk</h2>
+      <p class="section-desc">Open to security engineering roles, pentest contracts, and interesting research problems.</p>
+    </div>
+
+    <div class="contact-panel">
+      <div class="contact-prompt">
+        <pre class="contact-json">{
+  "email":    "<a href="mailto:kharrata.youssef2004@gmail.com">kharrata.youssef2004@gmail.com</a>" <button class="copy-btn" data-copy="kharrata.youssef2004@gmail.com">copy</button>,
+  "github":   "<a href="https://github.com/YoussefKharrata" target="_blank" rel="noopener">github.com/YoussefKharrata</a>",
+  "linkedin": "<a href="https://linkedin.com/in/YoussefKharrata" target="_blank" rel="noopener">linkedin.com/in/YoussefKharrata</a>",
+  "pgp_key":  "<a href="#" target="_blank" rel="noopener">0xA1B2 C3D4 — view</a>"
+}</pre>
+        <p class="cursor-line"><span class="prompt-user">youssef@sec</span><span class="prompt-sep">:~$</span> <span class="blink-cursor">▌</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span>© <span id="year"></span> Youssef Kharrata</span>
+    <span class="footer-sep">·</span>
+    <span>built with intent, not a template</span>
+  </div>
+</footer>
+
+<script src="shared.js"></script>
+<script src="contact.js"></script>
+</body>
+</html>

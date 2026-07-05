@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 — Youssef Kharrata</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta name="theme-color" content="#0A0D12">
+</head>
+<body>
+
+<div class="crt-overlay" aria-hidden="true"></div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="index.html">
+      <span class="brand-bracket">[</span>YK<span class="brand-bracket">]</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">home</a>
+      <a href="projects.html">projects</a>
+      <a href="skills.html">skills</a>
+      <a href="contact.html">contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="hero" style="padding-bottom:60px;">
+  <div class="terminal" style="max-width:640px; margin:0 auto;">
+    <div class="terminal-bar">
+      <span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span>
+      <span class="terminal-title">session — /dev/tty01</span>
+    </div>
+    <div class="terminal-body" style="cursor:default;">
+      <div class="line">request: <span class="path">GET</span> <span id="requestedPath">/unknown</span></div>
+      <div class="line error">404: resource not found</div>
+      <div class="line">the page you're looking for doesn't exist, or has moved.</div>
+      <div class="line">try <a href="index.html">./index.html</a> or <a href="projects.html">./projects.html</a> instead.</div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span>© <span id="year"></span> Youssef Kharrata</span>
+    <span class="footer-sep">·</span>
+    <span>built with intent, not a template</span>
+  </div>
+</footer>
+
+<script src="shared.js"></script>
+<script>
+  // fill in the requested path client-side since this is a static page
+  document.addEventListener("DOMContentLoaded", () => {
+    const el = document.getElementById("requestedPath");
+    if (el) el.textContent = window.location.pathname;
+  });
+</script>
+</body>
+</html>
