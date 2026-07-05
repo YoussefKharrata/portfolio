@@ -28,8 +28,8 @@ const commands = {
   },
   whoami() {
     return [
-      "Jordan Reyes — cybersecurity engineer.",
-      "Offensive security, threat research, and building systems that hold up under pressure.",
+      "Youssef Kharrata — cybersecurity engineer.",
+      "Defensive security, threat research, and building systems that hold up under pressure.",
       "Based in Casablanca, MA. Open to remote &amp; onsite work."
     ];
   },
