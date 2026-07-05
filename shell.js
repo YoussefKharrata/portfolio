@@ -50,7 +50,7 @@ const commands = {
   },
   github() {
     return [
-      'opening <a href="https://github.com/yourusername" target="_blank" rel="noopener">github.com/yourusername</a> in a new tab ...',
+      'opening <a href="https://github.com/YoussefKharrata" target="_blank" rel="noopener">github.com/YoussefKharrata</a> in a new tab ...',
     ];
   },
   sudo(arg) {
@@ -70,7 +70,7 @@ const commands = {
     ];
   },
   matrix() {
-    return ["wake up, Jordan...", "the projects page has you. 👁"];
+    return ["wake up, Youssef...", "the projects page has you. 👁"];
   },
   coffee() {
     return ["☕ brewing... this may take longer than most CVEs get patched."];
@@ -119,7 +119,7 @@ function runCommand(raw) {
   const key = cmd.toLowerCase();
 
   if (key === "github") {
-    window.open("https://github.com/yourusername", "_blank", "noopener");
+    window.open("https://github.com/YoussefKharrata", "_blank", "noopener");
   }
 
   if (Object.prototype.hasOwnProperty.call(commands, key)) {

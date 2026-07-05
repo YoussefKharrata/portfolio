@@ -231,6 +231,12 @@ body::before {
 }
 @keyframes blink { 50% { opacity: 0; } }
 
+@keyframes pulse-dot {
+  0%   { box-shadow: 0 0 0 0 rgba(76, 141, 255, 0.45); }
+  70%  { box-shadow: 0 0 0 6px rgba(76, 141, 255, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(76, 141, 255, 0); }
+}
+
 /* live input row inside terminal */
 .terminal-input-row {
   display: flex;
@@ -467,7 +473,7 @@ body::before {
   color: var(--text-faint);
   letter-spacing: 0.05em;
 }
-.case-severity {
+.case-status {
   font-family: var(--font-mono);
   font-size: 10.5px;
   padding: 3px 9px;
@@ -475,10 +481,20 @@ body::before {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
 }
-.sev-high { background: rgba(229,72,77,0.12); color: var(--red); }
-.sev-medium { background: rgba(76,141,255,0.14); color: var(--blue); }
-.sev-low { background: rgba(79,209,197,0.12); color: var(--cyan); }
+.case-status::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+.status-done { background: rgba(62,207,142,0.12); color: var(--green); }
+.status-done::before { background: var(--green); }
+.status-in-progress { background: rgba(76,141,255,0.14); color: var(--blue); }
+.status-in-progress::before { background: var(--blue); animation: pulse-dot 2.2s ease-out infinite; }
 
 .case-title { font-size: 19px; font-weight: 700; letter-spacing: -0.01em; }
 .case-category {

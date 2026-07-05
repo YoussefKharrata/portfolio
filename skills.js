@@ -5,26 +5,26 @@ const skillGroups = [
   {
     category: "Offensive Security",
     skills: [
-      { name: "Penetration Testing", level: 5 },
-      { name: "Web Exploitation", level: 5 },
+      { name: "Penetration Testing", level: 2 },
+      { name: "Web Exploitation", level: 3 },
       { name: "Social Engineering", level: 3 },
-      { name: "Red Team Ops", level: 4 }
+      { name: "Red Team Ops", level: 2 }
     ]
   },
   {
     category: "Defensive Security",
     skills: [
-      { name: "Incident Response", level: 4 },
-      { name: "SIEM & Log Analysis", level: 4 },
-      { name: "Threat Hunting", level: 3 },
+      { name: "Incident Response", level: 3 },
+      { name: "SIEM & Log Analysis", level: 3 },
+      { name: "Threat Hunting", level: 2 },
       { name: "Network Monitoring", level: 4 }
     ]
   },
   {
     category: "Tools & Platforms",
     skills: [
-      { name: "Burp Suite", level: 5 },
-      { name: "Metasploit", level: 4 },
+      { name: "Burp Suite", level: 3 },
+      { name: "Metasploit", level: 3 },
       { name: "Wireshark", level: 4 },
       { name: "Nmap", level: 5 }
     ]
