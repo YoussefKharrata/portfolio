@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
       btn.textContent = "copied";
       setTimeout(() => { btn.textContent = original; }, 1500);
     } catch (err) {
-      // clipboard API unavailable (e.g. file:// in some browsers) — fail silently
+      console.error("Failed to copy text: ", err);
     }
   });
 });
