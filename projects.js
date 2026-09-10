@@ -8,7 +8,7 @@ const projects = [
     title: "ZKP Authentication Demo",
     category: "Cryptography",
     status: "done",
-    description: "Interactive app demonstrating password-less login via Zero-Knowledge Proofs — full Schnorr protocol, the Fiat-Shamir heuristic for non-interactive proofs, a simulated PKI for certificate issuance, and live simulations of four classic cryptographic attacks.",
+    description: "Interactive app demonstrating password-less login via Zero-Knowledge Proofs : full Schnorr protocol, the Fiat-Shamir heuristic for non-interactive proofs, a simulated PKI for certificate issuance, and live simulations of four classic cryptographic attacks.",
     stack: ["Python", "Flask", "JavaScript", "HTML/CSS"],
     github: "https://github.com/YoussefKharrata/Cryptography_ZKP",
     demo: ""
@@ -18,7 +18,7 @@ const projects = [
     title: "A2F Smart Card Access Control",
     category: "Identity & Access",
     status: "done",
-    description: "Two-factor access control system built on JavaCard smart cards — a PIN as the first factor and a private key stored on-card as the second. Includes AES-128 encryption, brute-force lockout after 3 attempts, and full session/access logging.",
+    description: "Two-factor access control system built on JavaCard smart cards : a PIN as the first factor and a private key stored on-card as the second. Includes AES-128 encryption, brute-force lockout after 3 attempts, and full session/access logging.",
     stack: ["Java", "JavaCard", "APDU / ISO 7816"],
     github: "https://github.com/YoussefKharrata/AccessControlA2F",
     demo: ""
@@ -38,9 +38,9 @@ const projects = [
     title: "Internal Network Pentest Toolkit",
     category: "Network Security",
     status: "in-progress",
-    description: "A modular toolkit for internal network assessments — host discovery, service fingerprinting, and automated privilege-escalation checks with a clean reporting layer.",
+    description: "A modular toolkit for internal network assessments host discovery, service fingerprinting, and automated privilege-escalation checks with a clean reporting layer.",
     stack: ["Python", "Nmap", "Impacket", "Scapy"],
-    github: "https://github.com/yourusername/network-pentest-toolkit",
+    github: "https://github.com/YoussefKharrata/network-pentest-toolkit",
     demo: ""
   },
   {
@@ -50,7 +50,7 @@ const projects = [
     status: "in-progress",
     description: "Automated scanner that crawls target applications and tests for injection flaws, auth bypasses, and misconfigurations, with severity-ranked output.",
     stack: ["Python", "Burp Suite API", "SQLi", "XSS"],
-    github: "https://github.com/yourusername/webapp-scanner",
+    github: "https://github.com/YoussefKharrata/webapp-scanner",
     demo: ""
   },
   {
@@ -60,7 +60,7 @@ const projects = [
     status: "in-progress",
     description: "Isolated sandbox environment for detonating and observing suspicious binaries — syscall tracing, network capture, and automated IOC extraction.",
     stack: ["C", "YARA", "Cuckoo", "Wireshark"],
-    github: "https://github.com/yourusername/malware-sandbox",
+    github: "https://github.com/YoussefKharrata/malware-sandbox",
     demo: ""
   },
   {
@@ -70,7 +70,7 @@ const projects = [
     status: "in-progress",
     description: "Real-time dashboard that ingests SIEM alerts, deduplicates noise, and prioritizes incidents using a lightweight scoring model.",
     stack: ["TypeScript", "Elastic Stack", "React"],
-    github: "https://github.com/yourusername/soc-dashboard",
+    github: "https://github.com/YoussefKharrata/soc-dashboard",
     demo: ""
   },
   {
