@@ -40,7 +40,7 @@ const projects = [
     status: "in-progress",
     description: "A modular toolkit for internal network assessments host discovery, service fingerprinting, and automated privilege-escalation checks with a clean reporting layer.",
     stack: ["Python", "Nmap", "Impacket", "Scapy"],
-    github: "https://github.com/YoussefKharrata/network-pentest-toolkit",
+    github: "https://github.com/YoussefKharrata/Internal-Network-Pentest-Toolkit",
     demo: ""
   },
   {
